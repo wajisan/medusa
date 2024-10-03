@@ -1,0 +1,196 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+html, body, input {
+	font-family: 'Alegreya Sans', sans-serif;
+ 	margin: 0;
+ 	padding: 0;
+}
+body {
+ background: white;
+}
+
+.container {
+	padding: 10px;
+}
+form {
+ margin: 15px 0;
+}
+form input[type='text'] {
+ border: 2px solid #eb5424;
+ border-radius: 5px;
+ padding: 5px;
+ width: 75%;
+}
+form input[type='submit'] {
+ background: #eb5424;
+ border: none;
+ border-radius: 5px;
+ color: #FFF;
+ cursor: pointer;
+ font-weight: bold;
+ padding: 7px 5px;
+ width: 19%;
+}
+
+.deleteButton {
+  padding: 5px;
+  display: none;
+  text-align: center;
+}
+
+.urlItem div:first-child .deleteButton {
+    display: block;
+}
+
+.urlclass {
+    font-size: 14px;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-bottom: : 4px;
+}
+
+.navbar {
+	text-align: center;
+	max-width: 320px;
+    margin: auto;
+}
+
+#history {
+ background: #FFF;
+ border: 2px solid #eb5424;
+ height: 550px;
+}
+
+#urlContainer {
+	/*display: flex;*/
+	height: -webkit-fill-available;
+    margin: auto;
+    height: auto;
+}
+
+.urlItem {
+    margin-top: 24px;
+    font-size: 2em;
+    color: white;
+    border-radius: 10px;
+    padding: 2px;
+    /*min-width: 320px;
+    float: left;
+    max-width: 33%;
+    width: 100%;
+    */
+    padding-right: 5px;
+    padding-left: 5px;
+    height: auto;
+    padding-bottom: 40px;
+    
+
+    word-break: break-all;
+}
+
+.urlItem div {
+  display: grid;
+}
+
+
+@media screen and (max-width: 640px) {
+	.urlItem {
+		max-width: 100%;
+	}
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	input {
+		min-width: 304px;
+	}
+}
+
+.urlItem .code2 {
+	background-color: green;
+}
+
+.urlItem .code3 {
+	background-color: grey;
+}
+
+.urlItem .code4 {
+	background-color: orange;
+}
+
+.urlItem .code5 {
+	background-color: red;
+}
+
+.infos {
+    display: flex;
+    color: white;
+    margin: auto;
+    width: auto;
+    text-align: center;
+    max-width: 359px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+.infos div {
+	padding: 6px;
+  width: 25%;
+}
+
+.info2 {
+	background-color: green;
+}
+
+.info3 {
+	background-color: grey;
+}
+
+.info4 {
+	background-color: orange;
+}
+
+.info5 {
+	background-color: red;
+}
+
+.button {
+  background-color: grey; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+input {
+	min-width: 320px;
+    padding: 4px;
+    font-size: 16px;
+}
+
+.loading {
+	color: black;
+}
+
+.httpcode {
+	font-size: 0.5em;
+    background: white;
+    height: 100%;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 45px;
+    padding: 3px;
+    width: 35px;
+    margin: auto;
+    display: none;
+
+}
